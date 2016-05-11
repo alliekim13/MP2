@@ -2,13 +2,30 @@ Allie Kim
 May 11, 2016
 Instructions to compile:
 	- Everything is working (up to Task 4)
-	- Type command "make all"
-	- To run compression script:
-		- Type "./compress367 <name of data file to be compressed>"
-	- To run decompression script:
-		- Type "./decompress367 <name of data file to be decompressed>"
-		- Note that the file to be decompressed must end in ".367"
-		- Output file will be "<file name>.out"
+	- Type command "make real_clean" and "make all"
+	- Task 1:
+		"frequency367 <data file> <frequency file>"
+		"createcode367 <frequency file> <codebook file>"
+	- Task 2: 
+		"encode367 <codebook file> <data file> <compressed file>"
+	- Task 3:
+		"decode367 <codebook file> <compressed file> <uncompressed file>"
+	- Task 4:
+		- To run compression script:
+			- Type "./compress367 <name of data file to be compressed>"
+		- To run decompression script:
+			- Type "./decompress367 <name of data file to be decompressed>"
+			- Note that the file to be decompressed must end in ".367"
+			- Output file will be "<file name>.out"
 Task 5 Compression Ratio:
-	- 
+	- SomeSpanishStoryIDontKnow.html
+		- Gzip = 26914/73201 = .368
+		- Huffman: 388893/(73201*8) = .664
+	- TheLottery.html
+		- Gzip = 8203/24713 = .332 
+		- Huffman: 125915/(24713*8) = .637
+	- FrenchLanguage.html
+		- Gzip = 9078/24884 = .365 
+		- Huffman: 121716/(8*24884) = .611
+	
 
